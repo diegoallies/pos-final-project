@@ -87,7 +87,7 @@ function removeFromCart(position) {
 function checkout() {
   let total = cart
     .reduce((total, product) => {
-      return total + product.price * product.qty;
+      return product.price * product.qty;
     }, 0)
     .toFixed(2);
   try {
