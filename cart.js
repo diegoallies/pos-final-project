@@ -15,15 +15,16 @@ function readCart(cart) {
 
   cart.forEach((product, position) => {
     document.querySelector("#cart").innerHTML += `
+    <div class="container-box-277">
       <div class="card mb-3 w-100  position-relative" >
       <button type="button" class="position-absolute top-0 start-100 translate-middle badge btn btn-danger" onclick="removeFromCart(${position})">X</button>
         <div class="row g-0">
-          <div class="col-md-4">
+          <div class="col-md-4 imagess">
             <img src="${product.img}" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
-            <div class="card-body d-flex flex-column container">
-              <h5 class="card-title mb-3">${product.title}</h5>
+            <div class="card-body d-flex flex-column container contt">
+              <h5 class="cardhead mb-3">${product.title}</h5>
               <div class="d-flex mb-3 justify-content-between">
                 <p class="card-text">Individual price: </p>
                 <span>R${product.price}<span>
@@ -43,6 +44,7 @@ function readCart(cart) {
             </div>  
           </div>
         </div>
+      </div>
       </div>
     `;
   });

@@ -32,10 +32,10 @@ let products = JSON.parse(localStorage.getItem("products"))
         img: "https://www.carscoops.com/wp-content/uploads/webp/2021/02/Nissan-GT-R-2-1024x555.webp",
       },
       {
-        title: "oranges",
+        title: "GTR - 2020",
         category: "GTR",
-        price: 9.99,
-        img: "https://static.wikia.nocookie.net/fastandfurious/images/d/d2/Nissan_Skyline_-_2F2F.jpg/revision/latest/scale-to-width-down/1200?cb=20201128161453",
+        price: 2000000.96,
+        img: "https://www-europe.nissan-cdn.net/content/dam/Nissan/nissan_europe/vehicles/gt-r/r35/2_minor_change/overview/19TDIEULHD_GT-R_002.jpg.ximg.l_full_m.smart.jpg",
       },
     ];
 
@@ -51,7 +51,7 @@ function readProducts(products) {
       <div class="card">
         <img src="${product.img}" class="card-img-top" alt="${product.title}">
         <div class="card-body">
-          <h5 class="card-title">${product.title}</h5>
+          <h5 class="cardhead">${product.title}</h5>
           <p class="card-text">R${product.price}</p>
           <div class="d-flex mb-3">
             <input type="number" class="form-control" value=1 min=1 id="addToCart${position}">
