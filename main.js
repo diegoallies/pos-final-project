@@ -1,26 +1,26 @@
 let Skyline =[{
     name:"Carrot",
-    catergory:"vegetable",
+    catergory:"Skyline",
     price:"R6.99",
-    img:"https://i.ndtvimg.com/mt/cooks/2014-11/carrots.jpg"
+    img:"https://static.wikia.nocookie.net/fastandfurious/images/d/d2/Nissan_Skyline_-_2F2F.jpg/revision/latest/scale-to-width-down/1200?cb=20201128161453"
   },
   {
     name:"Apples",
     catergory:"Skyline",
     price:"R3.99",
-    img:"https://media.istockphoto.com/photos/red-apple-picture-id184276818?k=20&m=184276818&s=612x612&w=0&h=QxOcueqAUVTdiJ7DVoCu-BkNCIuwliPEgtAQhgvBA_g="
+    img:"https://static.wikia.nocookie.net/fastandfurious/images/d/d2/Nissan_Skyline_-_2F2F.jpg/revision/latest/scale-to-width-down/1200?cb=20201128161453"
   },
   {
-    name:"Bananas",
+    name:"Skyline",
     catergory:"Skyline",
     price:"4.99",
-    img:"https://5.imimg.com/data5/CI/VG/MY-59453495/yellow-banana-500x500.jpg"
+    img:"https://static.wikia.nocookie.net/fastandfurious/images/d/d2/Nissan_Skyline_-_2F2F.jpg/revision/latest/scale-to-width-down/1200?cb=20201128161453"
   },
   {
     name:"Potato",
-    catergory:"vegetable",
+    catergory:"Skyline",
     price:"R3.50",
-    img:"https://www.localcrop.com.au/330-thickbox_default/potatoes-washed-1kg.jpg"
+    img:"https://static.wikia.nocookie.net/fastandfurious/images/d/d2/Nissan_Skyline_-_2F2F.jpg/revision/latest/scale-to-width-down/1200?cb=20201128161453"
   },
   ]
   

@@ -3,37 +3,37 @@ let products = JSON.parse(localStorage.getItem("products"))
   : [
       {
         title: "bananas",
-        category: "Skyline",
+        category: "Fruit",
         price: 9.99,
         img: "https://i.postimg.cc/FHrjH935/banana.jpg",
       },
       {
         title: "apples",
-        category: "Skyline",
+        category: "Fruit",
         price: 9.99,
         img: "https://i.postimg.cc/W4Kr8gKT/apple.jpg",
       },
       {
         title: "peaches",
-        category: "Skyline",
+        category: "Fruit",
         price: 9.99,
         img: "https://i.postimg.cc/Vv9CzTNk/peach.jpg",
       },
       {
         title: "grapes",
-        category: "Skyline",
+        category: "Fruit",
         price: 9.99,
         img: "https://i.postimg.cc/SKw2Cq2K/grapes.jpg",
       },
       {
         title: "kiwi",
-        category: "Skyline",
+        category: "Fruit",
         price: 9.99,
-        img: "https://i.postimg.cc/43TbRzPP/Kiwi-Skyline.jpg",
+        img: "https://i.postimg.cc/43TbRzPP/Kiwi-Fruit.jpg",
       },
       {
         title: "oranges",
-        category: "Skyline",
+        category: "Fruit",
         price: 9.99,
         img: "https://i.postimg.cc/5NKQm8Dy/Oranges.jpg",
       },
@@ -108,9 +108,9 @@ function readProducts(products) {
                           name="editCategory${position}"
                           id="editCategory${position}"
                         >
-                          <option value="Skyline">Skyline</option>
-                          <option value="Auto-Evolution">Auto-Evolution</option>
-                          <option value="V-Spek">V-Spek</option>
+                          <option value="Fruit">Fruit</option>
+                          <option value="Vegetables">Vegetables</option>
+                          <option value="Meat">Meat</option>
                         </select>
                       </div>
                       <div class="mb-3">
