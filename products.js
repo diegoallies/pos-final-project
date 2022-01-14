@@ -109,7 +109,7 @@ function readProducts(products) {
                           id="editCategory${position}"
                         >
                           <option value="GTR">GTR</option>
-                          <option value="Vegetables">Vegetables</option>
+                          <option value="Honda">Honda</option>
                           <option value="Meat">Meat</option>
                         </select>
                       </div>
