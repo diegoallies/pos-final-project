@@ -2,40 +2,40 @@ let products = JSON.parse(localStorage.getItem("products"))
   ? JSON.parse(localStorage.getItem("products"))
   : [
       {
-        title: "bananas",
+        title: "Skyline",
         category: "GTR",
         price: 9.99,
-        img: "https://i.postimg.cc/FHrjH935/banana.jpg",
+        img: "https://static.wikia.nocookie.net/fastandfurious/images/d/d2/Nissan_Skyline_-_2F2F.jpg/revision/latest/scale-to-width-down/1200?cb=20201128161453",
       },
       {
         title: "apples",
         category: "GTR",
         price: 9.99,
-        img: "https://i.postimg.cc/W4Kr8gKT/apple.jpg",
+        img: "https://static.wikia.nocookie.net/fastandfurious/images/d/d2/Nissan_Skyline_-_2F2F.jpg/revision/latest/scale-to-width-down/1200?cb=20201128161453",
       },
       {
         title: "peaches",
         category: "GTR",
         price: 9.99,
-        img: "https://i.postimg.cc/Vv9CzTNk/peach.jpg",
+        img: "https://static.wikia.nocookie.net/fastandfurious/images/d/d2/Nissan_Skyline_-_2F2F.jpg/revision/latest/scale-to-width-down/1200?cb=20201128161453",
       },
       {
         title: "grapes",
         category: "GTR",
         price: 9.99,
-        img: "https://i.postimg.cc/SKw2Cq2K/grapes.jpg",
+        img: "https://static.wikia.nocookie.net/fastandfurious/images/d/d2/Nissan_Skyline_-_2F2F.jpg/revision/latest/scale-to-width-down/1200?cb=20201128161453",
       },
       {
         title: "kiwi",
         category: "GTR",
         price: 9.99,
-        img: "https://i.postimg.cc/43TbRzPP/Kiwi-GTR.jpg",
+        img: "https://static.wikia.nocookie.net/fastandfurious/images/d/d2/Nissan_Skyline_-_2F2F.jpg/revision/latest/scale-to-width-down/1200?cb=20201128161453",
       },
       {
         title: "oranges",
         category: "GTR",
         price: 9.99,
-        img: "https://i.postimg.cc/5NKQm8Dy/Oranges.jpg",
+        img: "https://static.wikia.nocookie.net/fastandfurious/images/d/d2/Nissan_Skyline_-_2F2F.jpg/revision/latest/scale-to-width-down/1200?cb=20201128161453",
       },
     ];
 
