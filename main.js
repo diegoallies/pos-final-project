@@ -1,4 +1,4 @@
-let fruit =[{
+let Skyline =[{
     name:"Carrot",
     catergory:"vegetable",
     price:"R6.99",
@@ -6,13 +6,13 @@ let fruit =[{
   },
   {
     name:"Apples",
-    catergory:"fruit",
+    catergory:"Skyline",
     price:"R3.99",
     img:"https://media.istockphoto.com/photos/red-apple-picture-id184276818?k=20&m=184276818&s=612x612&w=0&h=QxOcueqAUVTdiJ7DVoCu-BkNCIuwliPEgtAQhgvBA_g="
   },
   {
     name:"Bananas",
-    catergory:"fruit",
+    catergory:"Skyline",
     price:"4.99",
     img:"https://5.imimg.com/data5/CI/VG/MY-59453495/yellow-banana-500x500.jpg"
   },
@@ -24,29 +24,29 @@ let fruit =[{
   },
   ]
   
-  fruit = JSON.parse(localStorage.getItem("fruit"))
-  ? JSON.parse(localStorage.getItem("fruit"))
-  :fruit;
+  Skyline = JSON.parse(localStorage.getItem("Skyline"))
+  ? JSON.parse(localStorage.getItem("Skyline"))
+  :Skyline;
     
   
-  function readFruit(fruit){
-     document.querySelector("#fruit").innerHTML = "";
+  function readSkyline(Skyline){
+     document.querySelector("#Skyline").innerHTML = "";
   
-     fruit.forEach((fruit,position) => {
-     document.querySelector("#fruit").innerHTML +=`
+     Skyline.forEach((Skyline,position) => {
+     document.querySelector("#Skyline").innerHTML +=`
       
       <div class="card" style="width: 18rem;">
-      <img src="${fruit.img}" class="card-img-top">
+      <img src="${Skyline.img}" class="card-img-top">
       <div class="card-body">
       
-      ${fruit.name}
-      ${fruit.catergory} 
-      ${fruit.price}
+      ${Skyline.name}
+      ${Skyline.catergory} 
+      ${Skyline.price}
       
       <div class="content">
       <div  class="buttons">
       <button  class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#update-modal-${position}">EDIT</button>
-      <button  class="btn btn-danger" onclick="deleteFruit(${position})">DELETE</button>
+      <button  class="btn btn-danger" onclick="deleteSkyline(${position})">DELETE</button>
       </div>
       </div>
       </div>
@@ -61,21 +61,21 @@ let fruit =[{
             </div>
             <div class="modal-body1">
               <h4 class="fs-6">Name:</h4>
-              <input type="text"class="in" id="update-input-${position}" value="${fruit.name} "/>
+              <input type="text"class="in" id="update-input-${position}" value="${Skyline.name} "/>
               <h4 class="fs-6">Category:</h4>
               <select name="catergory" class="in" id="update-input-catergory-${position}">
-              <option value="fruit">fruit</option>
-              <option value="vegetables">vegetables</option>
+              <option value="Skyline">Skyline</option>
+              <option value="Auto-Evolution">Auto-Evolution</option>
               </select>
               <h4 class="fs-6">Price:</h4>
-              <input type="text" class="in" id="update-input-price-${position}" value="${fruit.price} "/>
+              <input type="text" class="in" id="update-input-price-${position}" value="${Skyline.price} "/>
               <h4 class="fs-6">Image:</h4>
-              <input type="text" class="in" id="update-input-img-${position}" value="${fruit.img} "/>
+              <input type="text" class="in" id="update-input-img-${position}" value="${Skyline.img} "/>
              
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-light" data-bs-dismiss="modal" onclick="updateFruit(${position})">Save changes</button>
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal" onclick="updateSkyline(${position})">Save changes</button>
             </div>
           </div>
         </div>
@@ -84,79 +84,79 @@ let fruit =[{
      });
   }
   
-  readFruit(fruit);
+  readSkyline(Skyline);
   
-  function createFruit(){
-      let newfruit = document.querySelector("#add").value;
+  function createSkyline(){
+      let newSkyline = document.querySelector("#add").value;
       let catergory = document.querySelector("#catergory").value;
       let img =  document.querySelector("#img").value;
       let price = document.querySelector("#price").value;
      
       try{
-          if(newfruit =="") throw "Please enter a fruit name..."
-          fruit.forEach(individual =>{
-              if(individual == newfruit)throw "That fruit name already exists..."
+          if(newSkyline =="") throw "Please enter a Skyline name..."
+          Skyline.forEach(individual =>{
+              if(individual == newSkyline)throw "That Skyline name already exists..."
           })
          
   
-          fruit.push({
-              name:newfruit,
+          Skyline.push({
+              name:newSkyline,
               catergory,
               img,
               price,
           });
-         localStorage.setItem("fruit",JSON.stringify(fruit));
-          readFruit(fruit);
+         localStorage.setItem("Skyline",JSON.stringify(Skyline));
+          readSkyline(Skyline);
       } catch(err){
           alert(err)
       }
      
   }
   
-  function deleteFruit(position){
-      fruit.splice(position, 1)
-      localStorage.setItem("fruit",JSON.stringify (fruit));
-      readFruit(fruit);
+  function deleteSkyline(position){
+      Skyline.splice(position, 1)
+      localStorage.setItem("Skyline",JSON.stringify (Skyline));
+      readSkyline(Skyline);
   }
   
-  function updateFruit(position){
-      let fruits =document.querySelector(`#update-input-${position}`).value;
+  function updateSkyline(position){
+      let Skylines =document.querySelector(`#update-input-${position}`).value;
       let catergory =document.querySelector(`#update-input-catergory-${position}`).value;
       let img =  document.querySelector(`#update-input-img-${position}`).value;
       let price = document.querySelector(`#update-input-price-${position}`).value;
       
       try{
-          if(fruits ===""){
-              throw new Error("please enter a fruit name")
+          if(Skylines ===""){
+              throw new Error("please enter a Skyline name")
           }
-          fruit[position]={
-              name:fruits,
+          Skyline[position]={
+              name:Skylines,
               catergory,
               img,
               price,
           };
-          localStorage.setItem("fruit",JSON.stringify (fruit));
-          readFruit(fruit);
+          localStorage.setItem("Skyline",JSON.stringify (Skyline));
+          readSkyline(Skyline);
       }catch(error){
           alert(error)
       }
       }
     
      function filterAll(){
-      readFruit(fruit);
+      readSkyline(Skyline);
      }
   
-     function filterFruit(){
-       let newFruit = fruit.filter(fruit =>{
-         return fruit.catergory == "fruit";
+     function filterSkyline(){
+       let newSkyline = Skyline.filter(Skyline =>{
+         return Skyline.catergory == "Skyline";
        })
-       readFruit( newFruit);
+       readSkyline( newSkyline);
      }
   
      function filterVeg(){
-      let newFruit = fruit.filter(fruit =>{
-        return fruit.catergory == "vegetables";
+      let newSkyline = Skyline.filter(Skyline =>{
+        return Skyline.catergory == "Auto-Evolution";
       })
-      readFruit( newFruit);
-      console.log(newFruit)
+      readSkyline( newSkyline);
+      console.log(newSkyline)
     }
