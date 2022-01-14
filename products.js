@@ -110,7 +110,7 @@ function readProducts(products) {
                         >
                           <option value="GTR">GTR</option>
                           <option value="Honda">Honda</option>
-                          <option value="Meat">Meat</option>
+                          <option value="Bugatti">Bugatti</option>
                         </select>
                       </div>
                       <div class="mb-3">
