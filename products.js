@@ -37,6 +37,42 @@ let products = JSON.parse(localStorage.getItem("products"))
         price: 2000000.96,
         img: "https://www-europe.nissan-cdn.net/content/dam/Nissan/nissan_europe/vehicles/gt-r/r35/2_minor_change/overview/19TDIEULHD_GT-R_002.jpg.ximg.l_full_m.smart.jpg",
       },
+      {
+        title: "Honda Civic",
+        category: "Honda",
+        price: 3000000.96,
+        img: "https://www.topgear.com/sites/default/files/cars-car/carousel/2020/09/308395_2020_civic_type_r_mmc_launch_2.jpg?w=892&h=502",
+      },
+      {
+        title: "Honda civic type R",
+        category: "Honda",
+        price: 8700000.96,
+        img: "https://cdn.honda.co.za/pub/general/civic-type-r/thumbnail/_240x202_crop_center-center_10_none/TypeR_Gallery_Thumb1.jpg",
+      },
+      {
+        title: "Honda CRV",
+        category: "Honda",
+        price: 5600000.96,
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/2018_Honda_CR-V_%28RW_MY18%29_%2BSport_2WD_wagon_%282018-10-22%29_01.jpg/280px-2018_Honda_CR-V_%28RW_MY18%29_%2BSport_2WD_wagon_%282018-10-22%29_01.jpg",
+      },
+      {
+        title: "Bugatti divo",
+        category: "Bugatti",
+        price: 200000000.96,
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Bugatti_Divo%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0029%29.jpg/280px-Bugatti_Divo%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0029%29.jpg",
+      },
+      {
+        title: "Bugatti vw model",
+        category: "Bugatti",
+        price: 10200000.96,
+        img: "https://cdn.motor1.com/images/mgl/6MGkl/s1/bugatti-chiron-pur-sport.webp",
+      },
+      {
+        title: "Bugatti Chiron",
+        category: "Bugatti",
+        price: 209800000.96,
+        img: "https://gtspirit.com/wp-content/uploads/2021/06/02_hispeed_css-e1624431465349.jpg",
+      },
     ];
 
 let cart = JSON.parse(localStorage.getItem("cart"))
