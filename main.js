@@ -45,8 +45,8 @@ let Skyline =[{
       
       <div class="content">
       <div  class="buttons">
-      <button  class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#update-modal-${position}">EDIT</button>
-      <button  class="btn btn-danger" onclick="deleteSkyline(${position})">DELETE</button>
+      <button  class="glow-on-hover lkj btn btn-dark" data-bs-toggle="modal" data-bs-target="#update-modal-${position}">EDIT</button>
+      <button  class="glow-on-hover lkj btn btn-danger" onclick="deleteSkyline(${position})">DELETE</button>
       </div>
       </div>
       </div>
@@ -57,7 +57,7 @@ let Skyline =[{
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">EDIT YOUR PURCHASE</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="glow-on-hover lkj btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body1">
               <h4 class="fs-6">Name:</h4>

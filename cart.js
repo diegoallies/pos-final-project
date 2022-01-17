@@ -17,7 +17,7 @@ function readCart(cart) {
     document.querySelector("#cart").innerHTML += `
     <div class="container-box-277">
       <div class="card mb-3 w-100  position-relative" >
-      <button type="button" class="position-absolute top-0 start-100 translate-middle badge btn btn-danger" onclick="removeFromCart(${position})">X</button>
+      <button type="button" class="glow-on-hover lkj position-absolute top-0 start-100 translate-middle badge btn btn-danger" onclick="removeFromCart(${position})">X</button>
         <div class="row g-0">
           <div class="col-md-4 imagess">
             <img src="${product.img}" class="img-fluid rounded-start" alt="...">
@@ -51,7 +51,7 @@ function readCart(cart) {
   showCartBadge();
   document.querySelector("#cart-footer").innerHTML += `
     <h3>Total cost: R${total}</h3>
-    <button class="btn btn-primary btn-lg" onclick="checkout()">
+    <button class="glow-on-hover lkj btn btn-primary btn-lg" onclick="checkout()">
       Checkout
     </button>
   `;
