@@ -147,3 +147,13 @@ img.card-img-top {
 button {
   background-color: black !important;
 }
+
+.card-text {
+  color: #000;
+
+}
+
+.cardhead {
+  color: #000;
+}
+
