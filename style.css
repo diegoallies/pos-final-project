@@ -23,6 +23,8 @@ height: 10%;
     width: 28%;
     height: 0%;
     margin-bottom: 5%;
+    background-color: #111 !important;
+    color: aliceblue !important;
   }
 
 .modal-backdrop {
@@ -150,11 +152,11 @@ button {
 }
 
 .card-text {
-  color: #000;
+  color: rgb(255, 255, 255);
 
 }
 
 .cardhead {
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 
