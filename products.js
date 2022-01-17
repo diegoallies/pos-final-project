@@ -29,7 +29,7 @@ let products = JSON.parse(localStorage.getItem("products"))
         title: "GTR Modified",
         category: "GTR",
         price: 500000000.00,
-        img: "https://www.carscoops.com/wp-content/uploads/webp/2021/02/Nissan-GT-R-2-1024x555.webp",
+        img: "https://wallpapercave.com/wp/wp8537838.jpg",
       },
       {
         title: "GTR - 2020",
