@@ -35,8 +35,8 @@ function readCart(cart) {
       product.qty
     } onchange="updateCart(${position})" />
               </div>
-              <div class="card-footer bg-white d-flex justify-content-between  p-0 pt-3">
-                <p>Total Cost: </p>
+              <div class="text-whitet card-footer bg-white d-flex justify-content-between  p-0 pt-3">
+                <p class="text-whitet">Total Cost: </p>
                 <span>R${(
                   parseFloat(product.price) * parseInt(product.qty)
                 ).toFixed(2)}</span>
